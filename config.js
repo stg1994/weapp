@@ -34,7 +34,7 @@ const CONF = {
         // Bucket 名称
         fileBucket: 'loser',
         // 文件夹
-        uploadFolder: ''
+        uploadFolder: 'images'
     },
 
     // 微信登录态有效期
@@ -48,7 +48,9 @@ const CONF = {
     qcloudSecretId: 'AKID0wsivBFKD3So0KOGXnz2Ka1a0IPOoxbA',
     qcloudSecretKey: 'cYQBmCTZeZWOB42wnhnYCzoCQTCylVZs',
     networkTimeout: 30000,
-    wxMessageToken: 'stg1994'
+    wxMessageToken: 'stg1994',
+
+   
 }
 
 module.exports = CONF
