@@ -30,7 +30,7 @@
     // Bucket 名称
         "fileBucket": "loser",
     // 文件夹
-        "uploadFolder": ""
+        "uploadFolder": "images"
   },
   // 微信登录态有效期
     "wxLoginExpires": "7200",

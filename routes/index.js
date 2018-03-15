@@ -19,8 +19,11 @@ router.get('/user', validationMiddleware, controllers.user)
 // --- 图片上传 Demo --- //
 // 图片上传接口，小程序端可以直接将 url 填入 wx.uploadFile 中
 router.post('/upload', controllers.upload)
+// 图片imgUrl地址上传到MySQL数据库
+router.post('/imgUrlData', controllers.imgUrlData)
+
 // --- 相册列表获取 Demo ---
-router.get('/list', controllers.list)
+router.get('/photolist', controllers.photolist)
 
 
 // --- 信道服务接口 Demo --- //
