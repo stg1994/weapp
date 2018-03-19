@@ -1,21 +1,9 @@
-var http = require('http');
-//var urllib = require('url');
+const { imagesmysql} = require('../qcloud')
 
-var port = 10011;
-var data = { 'id': ' ', 'urls': ' ' };
+module.exports = async ctx => {
+  // 获取上传之后的结果
+  // 具体可以查看：
+  const data = await imagesmysql(ctx.req)
 
-http.createServer(function (req, res) {
-  var params = urllib.parse(req.url, true);
-  console.log(params);
-  if (params.query && params.query.callback) {
-    console.log(params.query.callback);  
-    var str = params.query.callback + '(' + JSON.stringify(data) + ')';//jsonp  
-    res.end(str);
-  } else {
-    res.end(JSON.stringify(data));//普通的json  
-  }
-}).listen(port, function () {
-  console.log('server is listening on port ' + port);
-})
-
-module.exports = http
+  ctx.state.data = data
+}
