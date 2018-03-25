@@ -1,2 +1,4 @@
 warning: AppId has been deprecated, Please put it at the end of parameter Bucket(E.g: "test-1250000000").
 (node:19049) [DEP0013] DeprecationWarning: Calling an asynchronous function without callback is deprecated.
+warning: AppId has been deprecated, Please put it at the end of parameter Bucket(E.g: "test-1250000000").
+(node:19049) [DEP0013] DeprecationWarning: Calling an asynchronous function without callback is deprecated.
